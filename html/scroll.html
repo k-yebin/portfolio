@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a{
+            text-decoration: none;
+        }
+
+        .scroll-down {
+            z-index: 1000;
+            position: absolute;
+            bottom: 4rem;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .scroll {
+            width: 2.5rem;
+            height: 4rem;
+            border: 2px solid rgba(255, 255, 255, 0.356);
+            border-radius: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scroll span {
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 50%;
+            background-color: white;
+            display: block;
+            animation: cursor 1.5s linear infinite;
+        }
+
+        @keyframes cursor {
+            0% {
+                opacity: 0;
+                transform: translateY(-1rem);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(1rem);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="scroll-down">
+        <div class="scroll">
+            <span class="scroll-dot"></span>
+        </div>
+    </a>
+</body>
+
+</html>

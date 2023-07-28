@@ -1,0 +1,147 @@
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .title span {
+        font-size: 1.5rem;
+    }
+    
+    .description {
+        font-size: 0.8rem;
+        letter-spacing: 1.1px;
+    }
+
+    #scroll {
+        display: none;
+    }
+
+    .header__toggle {
+        display: block;
+    }
+
+    .header__menu {
+        /* display: none; */
+        background-color: var(--color-bgc);
+        position: absolute;
+        z-index: -1;
+        top: 85px;
+        left: 100%;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+
+    .header__menu.open {
+        /* display: block; */
+        opacity: 1;
+        left: 0;
+    }
+
+    .header__menu li {
+        padding: 15px 0;
+        border-bottom: 1px solid #ffffff1c;
+        transition: all 0.8s;
+    }
+
+    #home .max-container {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+
+    #home .home__avatar {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    #home .home__avatar img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .home__txt {
+        font-size: 0.8rem;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .home__title {
+        font-size: 1.5rem;
+    }
+
+    .home__title strong {
+        font-size: 2rem;
+    }
+
+    .about__inner {
+        flex-direction: column;
+    }
+
+    .about__inner .about__avatar{
+        display: none;
+    }
+
+    .about__inner .about__title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__inner .about__title .my{
+        margin-left: 15px;
+    }
+
+    .about__tab li{
+        margin-top: 10px;
+    }
+
+    #skills {
+        background-color: var(--color-dark);
+        overflow: hidden;
+    }
+
+    .skills__inner__wrap {
+        background-color: transparent;
+    }
+
+    .skills__inner {
+        flex-direction: column;
+    }
+
+    .skills__txt {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .skills__list {
+        width: 100vw;
+        overflow: hidden;
+        overflow-x: scroll;
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .skills__list::-webkit-scrollbar {
+        width: 5px;
+        /* 스크롤바의 너비 */
+    }
+    
+    .skills__list::-webkit-scrollbar-thumb {
+        height: 5%;
+        /* 스크롤바의 길이 */
+        background: var(--color-accent);
+        /* 스크롤바의 색상 */
+        border-radius: 10px;
+    }
+    
+    .skills__list::-webkit-scrollbar-track {
+        background: transparent;
+        /*스크롤바 뒷 배경 색상*/
+    }
+
+}
