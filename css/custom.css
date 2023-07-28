@@ -71,7 +71,6 @@ button {
 
 /* COMMON */
 section {
-    border-bottom: 1px solid #ff0000;
     height: 100vh;
 }
 
@@ -202,7 +201,6 @@ header.active a {
 
 /* HOME */
 #scroll {
-    border: 1px solid red;
 }
 
 #home {
@@ -365,7 +363,6 @@ header.active a {
 #about .about_description {
     flex: 1;
     font-size: 1.2rem;
-    border: 1px solid red;
     padding: 0 20px;
     line-height: 2.6rem;
     letter-spacing: 1px;
@@ -554,6 +551,10 @@ header.active a {
     letter-spacing: 1px;
 }
 
+.projects_container .project_header .project_description p {
+    padding: 5px 0;
+}
+
 .projects_container .project_content {
     display: flex;
     justify-content: center;
@@ -570,22 +571,6 @@ header.active a {
 
 .projects_container .project_content .mokup img {
     width: 100%;
-}
-
-.projects_container .project_content .mokup_inner {
-    background-color: rgba(255, 0, 0, 0.164);
-    position: absolute;
-    top: 36.7%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 515px;
-    height: 300px;
-    z-index: -1;
-}
-
-.projects_container .project_content .mokup_inner video {
-    width: 515px;
-    height: 300px;
 }
 
 .projects_container .project_content .project_text {
@@ -617,6 +602,21 @@ header.active a {
     padding: 35px 0;
 }
 
+.project_content .mokup {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.project_content .mokup_inner {
+    position: absolute;
+    top: 10px;
+    z-index: -1;
+}
+
+.project_content .mokup_inner img{
+    border-radius: 10px;
+}
 
 .project_content .project_attach {
     display: flex;
@@ -703,7 +703,6 @@ header.active a {
     position: relative;
     width: 100%;
     color: rgba(255, 255, 255, 0.37);
-    border: 1px solid aqua;
 }
 
 #contact .accent {
